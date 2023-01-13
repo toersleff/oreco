@@ -1,4 +1,4 @@
- @prefix : <http://www.hsu-ifa.de/ontologies/OptiFlexAlignment#> .
+@prefix : <http://www.hsu-ifa.de/ontologies/OptiFlexAlignment#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix optiflex: <http://www.hsu-ifa.de/ontologies/OptiFlex#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
