@@ -1,0 +1,101 @@
+@prefix : <http://www.hsu-ifa.de/ontologies/OptiFlex#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ns: <http://www.owl-ontologies.com/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+: a owl:Ontology ;
+    dc:description "Ontology code created by Chowlk" .
+
+:activationGradientinKilowattPerSecond a owl:DatatypeProperty ;
+    rdfs:label "activation gradientin kilowatt per second" ;
+    rdfs:domain :FlexibleLoad ;
+    rdfs:range xsd:double .
+
+:costInEuro a owl:DatatypeProperty ;
+    rdfs:label "cost in euro" ;
+    rdfs:domain :FlexibleLoad ;
+    rdfs:range xsd:double .
+
+:earliestStart a owl:DatatypeProperty ;
+    rdfs:label "earliest start" ;
+    rdfs:domain :FlexibleLoad ;
+    rdfs:range xsd:dateTime .
+
+:hasDependencySequence a owl:ObjectProperty ;
+    rdfs:label "has dependency sequence" ;
+    rdfs:domain :FlexibleLoadDependency ;
+    rdfs:range :DependencySequence .
+
+:isFlexibleLoadOf a owl:ObjectProperty ;
+    rdfs:label "is flexible load of" ;
+    owl:inverseOf :hasFlexibleLoad .
+
+:isTargetFlexibleLoadOf a owl:ObjectProperty ;
+    rdfs:label "is target flexible load of" ;
+    owl:inverseOf :hasTargetFlexibleLoad .
+
+:isTriggerFlexibleLoadOf a owl:ObjectProperty ;
+    rdfs:label "is trigger flexible load of" ;
+    owl:inverseOf :hasTriggerFlexibleLoad .
+
+:latestStart a owl:DatatypeProperty ;
+    rdfs:label "latest start" ;
+    rdfs:domain :FlexibleLoad ;
+    rdfs:range xsd:dateTime .
+
+:powerStateInKilowatts a owl:DatatypeProperty ;
+    rdfs:label "power state in kilowatts" ;
+    rdfs:domain :FlexibleLoad ;
+    rdfs:range xsd:double .
+
+:temporalGapInSeconds a owl:DatatypeProperty ;
+    rdfs:label "temporal gap in seconds" ;
+    rdfs:domain :FlexibleLoadDependency ;
+    rdfs:range xsd:int .
+
+ns:hasDuration a owl:ObjectProperty ;
+    rdfs:label "has duration" ;
+    rdfs:domain :FlexibleLoad ;
+    rdfs:range :Duration .
+
+:DependencySequence a owl:Class ;
+    rdfs:label "Dependency Sequence" ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:oneOf ( :end-start :start-end :end-end :start-start ) ] .
+
+:Duration a owl:Class ;
+    rdfs:label "Duration" .
+
+:Process a owl:Class ;
+    rdfs:label "Process" .
+
+:end-end a owl:NamedIndividual .
+
+:end-start a owl:NamedIndividual .
+
+:hasFlexibleLoad a owl:ObjectProperty ;
+    rdfs:label "has flexible load" ;
+    rdfs:domain :Process ;
+    rdfs:range :FlexibleLoad .
+
+:hasTargetFlexibleLoad a owl:ObjectProperty ;
+    rdfs:label "has target flexible load" ;
+    rdfs:domain :FlexibleLoadDependency .
+
+:hasTriggerFlexibleLoad a owl:ObjectProperty ;
+    rdfs:label "has trigger flexible load" ;
+    rdfs:domain :FlexibleLoadDependency .
+
+:start-end a owl:NamedIndividual .
+
+:start-start a owl:NamedIndividual .
+
+:FlexibleLoadDependency a owl:Class ;
+    rdfs:label "Flexible Load Dependency" .
+
+:FlexibleLoad a owl:Class ;
+    rdfs:label "Flexible Load" .
+
