@@ -1,10 +1,10 @@
-@prefix : <http://www.hsu-ifa.de/ontologies/LVGridTopology#> .
+@prefix : <https://www.hsu-ifa.de/ontologies/LVGridTopology#> .
 @prefix mod: <https://w3id.org/mod#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-: a owl:Ontology ;
+<https://www.hsu-ifa.de/ontologies/LVGridTopology> a owl:Ontology ;
     mod:createdWith <https://chowlk.linkeddata.es/> .
 
 :hasEndNode a owl:ObjectProperty ;
@@ -41,4 +41,3 @@
 :Node a owl:Class ;
     rdfs:label "Node" ;
     rdfs:subClassOf :Component .
-
