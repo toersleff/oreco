@@ -5,10 +5,10 @@
 @prefix s4ener: <https://saref.etsi.org/saref4ener/> .
 @prefix topo: <https://www.hsu-ifa.de/ontologies/LVGridTopology#> .
 
-: a owl:Ontology ;
-    owl:imports <https://saref.etsi.org/saref4ener/>,
-        <https://www.hsu-ifa.de/ontologies/LVGridTopology/>,
-        <https://www.hsu-ifa.de/ontologies/SAREF4ENERExtension/> ;
+<https://www.hsu-ifa.de/ontologies/PeakEvaluation01AlignmentOntology> a owl:Ontology ;
+    owl:imports s4ener:,
+        <https://raw.githubusercontent.com/toersleff/oreco/main/exampleOntologies/LVGridTopo_edited.ttl>,
+        <https://raw.githubusercontent.com/toersleff/oreco/main/exampleOntologies/SarefExt_edited.ttl> ;
     mod:createdWith <https://chowlk.linkeddata.es/> .
 
 :hasLocation a owl:ObjectProperty ;
@@ -16,4 +16,3 @@
     rdfs:domain s4ener:FlexOffer,
         s4ener:FlexRequest ;
     rdfs:range topo:Node .
-
