@@ -5,7 +5,7 @@
 @prefix s4ener: <https://saref.etsi.org/saref4ener/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-: a owl:Ontology ;
+<https://www.hsu-ifa.de/ontologies/SAREF4ENERExtension> a owl:Ontology ;
     owl:imports s4ener: ;
     mod:createdWith <https://chowlk.linkeddata.es/> .
 
