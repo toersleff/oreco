@@ -1,0 +1,22 @@
+@prefix : <https://www.hsu-ifa.de/ontologies/SAREF4ENERExtension#> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix s4ener: <https://saref.etsi.org/saref4ener/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+: a owl:Ontology ;
+    owl:imports s4ener: ;
+    mod:createdWith <https://chowlk.linkeddata.es/> .
+
+:Kilowatt a owl:NamedIndividual,
+        s4ener:PowerUnit .
+
+:Watt a owl:NamedIndividual,
+        s4ener:PowerUnit .
+
+:hasPriceInEuro a owl:DatatypeProperty ;
+    rdfs:label "has price in euro" ;
+    rdfs:domain s4ener:FlexOffer ;
+    rdfs:range xsd:double .
+
