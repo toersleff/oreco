@@ -6,7 +6,7 @@
 @prefix topo: <https://www.hsu-ifa.de/ontologies/LVGridTopology#> .
 
 : a owl:Ontology ;
-    owl:imports s4ener:,
+    owl:imports <https://saref.etsi.org/saref4ener/>,
         <https://www.hsu-ifa.de/ontologies/LVGridTopology/>,
         <https://www.hsu-ifa.de/ontologies/SAREF4ENERExtension/> ;
     mod:createdWith <https://chowlk.linkeddata.es/> .
