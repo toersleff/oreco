@@ -13,6 +13,9 @@
 
 :hasLocation a owl:ObjectProperty ;
     rdfs:label "has location" ;
-    rdfs:domain s4ener:FlexOffer,
-        s4ener:FlexRequest ;
+    rdfs:domain [ rdf:type owl:Class ;
+                           owl:unionOf ( s4ener:FlexOffer
+                                         s4ener:FlexRequest
+                                       )
+                         ] ;
     rdfs:range topo:Node .
