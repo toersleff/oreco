@@ -75,6 +75,7 @@
         <rdf:type rdf:resource="https://saref.etsi.org/saref4ener/FlexOffer"/>
         <saref4ener:hasEffectivePeriod rdf:resource="http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#interval03"/>
         <saref4ener:includes rdf:resource="http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#ts01"/>
+        <saref4ener:relatesToRequest rdf:resource="http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#fr02"/>
         <PeakEvaluation01AlignmentOntology:hasLocation rdf:resource="http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#node05"/>
         <SAREF4ENERExtension:hasPriceInEuro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.5</SAREF4ENERExtension:hasPriceInEuro>
     </owl:NamedIndividual>
