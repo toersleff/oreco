@@ -1,0 +1,242 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#"
+     xml:base="http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit"
+     xmlns:mod="https://w3id.org/mod#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:core="https://saref.etsi.org/core/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:saref4ener="https://saref.etsi.org/saref4ener/"
+     xmlns:LVGridTopology="https://www.hsu-ifa.de/ontologies/LVGridTopology#"
+     xmlns:SAREF4ENERExtension="https://www.hsu-ifa.de/ontologies/SAREF4ENERExtension#"
+     xmlns:PeakEvaluation01AlignmentOntology="https://www.hsu-ifa.de/ontologies/PeakEvaluation01AlignmentOntology#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit">
+        <owl:imports rdf:resource="https://www.hsu-ifa.de/ontologies/PeakEvaluation01AlignmentOntology"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#bb01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#bb01">
+        <rdf:type rdf:resource="https://www.hsu-ifa.de/ontologies/LVGridTopology#Busbar"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#bb02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#bb02">
+        <rdf:type rdf:resource="https://www.hsu-ifa.de/ontologies/LVGridTopology#Busbar"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#dp01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#dp01">
+        <rdf:type rdf:resource="https://saref.etsi.org/saref4ener/DataPoint"/>
+        <core:isMeasuredIn rdf:resource="https://www.hsu-ifa.de/ontologies/SAREF4ENERExtension#Kilowatt"/>
+        <core:hasTimestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2024-06-28T12:00:00Z</core:hasTimestamp>
+        <core:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</core:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#dp02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#dp02">
+        <rdf:type rdf:resource="https://saref.etsi.org/saref4ener/DataPoint"/>
+        <core:isMeasuredIn rdf:resource="https://www.hsu-ifa.de/ontologies/SAREF4ENERExtension#Kilowatt"/>
+        <core:hasTimestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2024-06-28T12:15:00Z</core:hasTimestamp>
+        <core:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</core:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#fo1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#fo1">
+        <rdf:type rdf:resource="https://saref.etsi.org/saref4ener/FlexOffer"/>
+        <saref4ener:hasEffectivePeriod rdf:resource="http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#interval03"/>
+        <saref4ener:includes rdf:resource="http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#ts01"/>
+        <PeakEvaluation01AlignmentOntology:hasLocation rdf:resource="http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#node05"/>
+        <SAREF4ENERExtension:hasPriceInEuro rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.5</SAREF4ENERExtension:hasPriceInEuro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#fr01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#fr01">
+        <rdf:type rdf:resource="https://saref.etsi.org/saref4ener/FlexRequest"/>
+        <saref4ener:hasEffectivePeriod rdf:resource="http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#interval01"/>
+        <PeakEvaluation01AlignmentOntology:hasLocation rdf:resource="http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#node01"/>
+        <PeakEvaluation01AlignmentOntology:hasLocation rdf:resource="http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#node02"/>
+        <saref4ener:hasCreationTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2024-06-28T10:00:00Z</saref4ener:hasCreationTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#fr02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#fr02">
+        <rdf:type rdf:resource="https://saref.etsi.org/saref4ener/FlexRequest"/>
+        <saref4ener:hasEffectivePeriod rdf:resource="http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#interval02"/>
+        <PeakEvaluation01AlignmentOntology:hasLocation rdf:resource="http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#node05"/>
+        <saref4ener:hasCreationTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2024-06-28T11:00:00Z</saref4ener:hasCreationTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#interval01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#interval01">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#Interval"/>
+        <saref4ener:hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2024-06-28T11:00:00Z</saref4ener:hasStartTime>
+        <saref4ener:isFinishedAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2024-06-28T12:00:00Z</saref4ener:isFinishedAt>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#interval02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#interval02">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#Interval"/>
+        <saref4ener:hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2024-06-28T12:00:00Z</saref4ener:hasStartTime>
+        <saref4ener:isFinishedAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2024-06-28T13:00:00Z</saref4ener:isFinishedAt>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#interval03 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#interval03">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#Interval"/>
+        <saref4ener:hasStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2024-06-28T12:00:00Z</saref4ener:hasStartTime>
+        <saref4ener:isFinishedAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2024-06-28T12:30:00Z</saref4ener:isFinishedAt>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#ls01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#ls01">
+        <rdf:type rdf:resource="https://www.hsu-ifa.de/ontologies/LVGridTopology#LineSegment"/>
+        <LVGridTopology:hasEndNode rdf:resource="http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#node02"/>
+        <LVGridTopology:hasStartNode rdf:resource="http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#node01"/>
+        <LVGridTopology:isComponentOf rdf:resource="http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#bb01"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#ls02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#ls02">
+        <rdf:type rdf:resource="https://www.hsu-ifa.de/ontologies/LVGridTopology#LineSegment"/>
+        <LVGridTopology:hasEndNode rdf:resource="http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#node03"/>
+        <LVGridTopology:hasStartNode rdf:resource="http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#node02"/>
+        <LVGridTopology:isComponentOf rdf:resource="http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#bb01"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#ls03 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#ls03">
+        <rdf:type rdf:resource="https://www.hsu-ifa.de/ontologies/LVGridTopology#LineSegment"/>
+        <LVGridTopology:hasEndNode rdf:resource="http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#node04"/>
+        <LVGridTopology:hasStartNode rdf:resource="http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#node03"/>
+        <LVGridTopology:isComponentOf rdf:resource="http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#bb01"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#ls04 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#ls04">
+        <rdf:type rdf:resource="https://www.hsu-ifa.de/ontologies/LVGridTopology#LineSegment"/>
+        <LVGridTopology:hasEndNode rdf:resource="http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#node05"/>
+        <LVGridTopology:hasStartNode rdf:resource="http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#node04"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#node01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#node01">
+        <rdf:type rdf:resource="https://www.hsu-ifa.de/ontologies/LVGridTopology#Node"/>
+        <LVGridTopology:isComponentOf rdf:resource="http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#bb01"/>
+        <LVGridTopology:isRootNode rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</LVGridTopology:isRootNode>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#node02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#node02">
+        <rdf:type rdf:resource="https://www.hsu-ifa.de/ontologies/LVGridTopology#Node"/>
+        <LVGridTopology:isComponentOf rdf:resource="http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#bb01"/>
+        <LVGridTopology:isRootNode rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</LVGridTopology:isRootNode>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#node03 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#node03">
+        <rdf:type rdf:resource="https://www.hsu-ifa.de/ontologies/LVGridTopology#Node"/>
+        <LVGridTopology:isComponentOf rdf:resource="http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#bb01"/>
+        <LVGridTopology:isRootNode rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</LVGridTopology:isRootNode>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#node04 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#node04">
+        <rdf:type rdf:resource="https://www.hsu-ifa.de/ontologies/LVGridTopology#Node"/>
+        <LVGridTopology:isComponentOf rdf:resource="http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#bb01"/>
+        <LVGridTopology:isRootNode rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</LVGridTopology:isRootNode>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#node05 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#node05">
+        <rdf:type rdf:resource="https://www.hsu-ifa.de/ontologies/LVGridTopology#Node"/>
+        <LVGridTopology:isComponentOf rdf:resource="http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#bb01"/>
+        <LVGridTopology:isRootNode rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</LVGridTopology:isRootNode>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#ts01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#ts01">
+        <rdf:type rdf:resource="https://saref.etsi.org/saref4ener/TimeSeries"/>
+        <saref4ener:hasDataPoint rdf:resource="http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#dp01"/>
+        <saref4ener:hasDataPoint rdf:resource="http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#dp02"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
