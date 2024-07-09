@@ -86,6 +86,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#fr01">
         <rdf:type rdf:resource="https://saref.etsi.org/saref4ener/FlexRequest"/>
         <saref4ener:hasEffectivePeriod rdf:resource="http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#interval01"/>
+        <saref4ener:hasUsage rdf:resource="https://saref.etsi.org/saref4ener/Production"/>
         <PeakEvaluation01AlignmentOntology:hasLocation rdf:resource="http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#node01"/>
         <PeakEvaluation01AlignmentOntology:hasLocation rdf:resource="http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#node02"/>
         <saref4ener:hasCreationTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2024-06-28T10:00:00Z</saref4ener:hasCreationTime>
@@ -98,6 +99,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#fr02">
         <rdf:type rdf:resource="https://saref.etsi.org/saref4ener/FlexRequest"/>
         <saref4ener:hasEffectivePeriod rdf:resource="http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#interval02"/>
+        <saref4ener:hasUsage rdf:resource="https://saref.etsi.org/saref4ener/Production"/>
         <PeakEvaluation01AlignmentOntology:hasLocation rdf:resource="http://www.semanticweb.org/sebastiantörsleff/ontologies/2024/6/PEAK_case_study_v1_taskfit#node05"/>
         <saref4ener:hasCreationTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2024-06-28T11:00:00Z</saref4ener:hasCreationTime>
     </owl:NamedIndividual>
