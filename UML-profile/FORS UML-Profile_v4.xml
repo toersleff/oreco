@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<UMLProfile profiletype="uml2">
+	<Documentation id="CBE32681-2" name="FORS UML-Profile v4" version="" notes="FORS UML-Profile v4"/>
+	<Content>
+		<Stereotypes>
+			<Stereotype name="FunctionalOntologicalRequirement" notes="" cx="177" cy="127" bgcolor="16777200" fontcolor="0" bordercolor="0" borderwidth="1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Requirement"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="1_Informal_CQ" type="char" description="" unit="" values="" default=""/>
+					<Tag name="2_Answer" type="char" description="" unit="" values="" default=""/>
+					<Tag name="3_Answer_Datatype" type="char" description="" unit="" values="" default=""/>
+					<Tag name="4_Main_Context" type="enumeration" description="" unit="" values="ACL.INFORM,ACL.QUERY_REF,KB_QUERY,KB_INSERT,ACL.ACCEPT_PROPOSAL,ACL.REJECT_PROPOSAL,undefined,ACL.REFUSE,ACL.NOT_UNDERSTOOD,ACL.QUERY_IF,ACL.INFORM_REF,ACL.UNKNOWN,ACL.CFP,ACL.PROPOSE" default="undefined"/>
+					<Tag name="5_Parent_FOR" type="char" description="" unit="" values="" default="n/a"/>
+					<Tag name="6_Ontological_Resource" type="char" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="ACL.ACCEPT_PROPOSAL" notes="" cx="150" cy="35" bgcolor="16251646" fontcolor="0" bordercolor="0" borderwidth="1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Message">
+						<Property name="direction" value="Source -&gt; Destination"/>
+						<Property name="messageKind" value=""/>
+						<Property name="messageSort" value=""/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="ACL.REJECT_PROPOSAL" notes="" cx="150" cy="35" bgcolor="16251646" fontcolor="0" bordercolor="0" borderwidth="1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Message">
+						<Property name="direction" value="Source -&gt; Destination"/>
+						<Property name="messageKind" value=""/>
+						<Property name="messageSort" value=""/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="ACL.REFUSE" notes="" cx="150" cy="35" bgcolor="16251646" fontcolor="0" bordercolor="0" borderwidth="1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Message">
+						<Property name="direction" value="Source -&gt; Destination"/>
+						<Property name="messageKind" value=""/>
+						<Property name="messageSort" value=""/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="ACL.QUERY_IF" notes="" cx="150" cy="35" bgcolor="16251646" fontcolor="0" bordercolor="0" borderwidth="1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Message">
+						<Property name="direction" value="Source -&gt; Destination"/>
+						<Property name="messageKind" value=""/>
+						<Property name="messageSort" value=""/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="ACL.NOT_UNDERSTOOD" notes="" cx="150" cy="35" bgcolor="16251646" fontcolor="0" bordercolor="0" borderwidth="1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Message">
+						<Property name="direction" value="Source -&gt; Destination"/>
+						<Property name="messageKind" value=""/>
+						<Property name="messageSort" value=""/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="ACL.INFORM_REF" notes="" cx="150" cy="35" bgcolor="16251646" fontcolor="0" bordercolor="0" borderwidth="1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Message">
+						<Property name="direction" value="Source -&gt; Destination"/>
+						<Property name="messageKind" value=""/>
+						<Property name="messageSort" value=""/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="ACL.QUERY_REF" notes="" cx="150" cy="35" bgcolor="16251646" fontcolor="0" bordercolor="0" borderwidth="1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Message">
+						<Property name="direction" value="Source -&gt; Destination"/>
+						<Property name="messageKind" value=""/>
+						<Property name="messageSort" value=""/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="ACL.INFORM" notes="" cx="150" cy="35" bgcolor="16251646" fontcolor="0" bordercolor="0" borderwidth="1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Message">
+						<Property name="direction" value="Source -&gt; Destination"/>
+						<Property name="messageKind" value=""/>
+						<Property name="messageSort" value=""/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="ACL.UNKNOWN" notes="" cx="150" cy="35" bgcolor="16251646" fontcolor="0" bordercolor="0" borderwidth="1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Message">
+						<Property name="direction" value="Source -&gt; Destination"/>
+						<Property name="messageKind" value=""/>
+						<Property name="messageSort" value=""/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="ACL.CFP" notes="" cx="150" cy="35" bgcolor="16251646" fontcolor="0" bordercolor="0" borderwidth="1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Message">
+						<Property name="direction" value="Source -&gt; Destination"/>
+						<Property name="messageKind" value=""/>
+						<Property name="messageSort" value=""/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="ACL.PROPOSE" notes="" cx="150" cy="35" bgcolor="16251646" fontcolor="0" bordercolor="0" borderwidth="1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Message">
+						<Property name="direction" value="Source -&gt; Destination"/>
+						<Property name="messageKind" value=""/>
+						<Property name="messageSort" value=""/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+		</Stereotypes>
+		<TaggedValueTypes/>
+		<ViewDefinitions/>
+		<Metamodel/>
+	</Content>
+</UMLProfile>
