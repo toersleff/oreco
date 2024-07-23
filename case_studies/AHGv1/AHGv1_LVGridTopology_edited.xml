@@ -1,0 +1,161 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.hsu-ifa.de/ontologies/LVGridTopology#"
+     xml:base="http://www.hsu-ifa.de/ontologies/LVGridTopology"
+     xmlns:mod="https://w3id.org/mod#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.hsu-ifa.de/ontologies/LVGridTopology#">
+        <mod:createdWith rdf:resource="https://chowlk.linkeddata.es/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/mod#createdWith -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/mod#createdWith"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/LVGridTopology#hasEndNode -->
+
+    <owl:ObjectProperty rdf:about="http://www.hsu-ifa.de/ontologies/LVGridTopology#hasEndNode">
+        <rdfs:domain rdf:resource="http://www.hsu-ifa.de/ontologies/LVGridTopology#LineSegment"/>
+        <rdfs:range rdf:resource="http://www.hsu-ifa.de/ontologies/LVGridTopology#Node"/>
+        <rdfs:label>has end node</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/LVGridTopology#hasStartNode -->
+
+    <owl:ObjectProperty rdf:about="http://www.hsu-ifa.de/ontologies/LVGridTopology#hasStartNode">
+        <rdfs:domain rdf:resource="http://www.hsu-ifa.de/ontologies/LVGridTopology#LineSegment"/>
+        <rdfs:range rdf:resource="http://www.hsu-ifa.de/ontologies/LVGridTopology#Node"/>
+        <rdfs:label>has start node</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/LVGridTopology#isComponentOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.hsu-ifa.de/ontologies/LVGridTopology#isComponentOf">
+        <owl:inverseOf rdf:resource="http://www.hsu-ifa.de/ontologies/LVGridTopology#isComponentOf"/>
+        <rdfs:domain rdf:resource="http://www.hsu-ifa.de/ontologies/LVGridTopology#Busbar"/>
+        <rdfs:range rdf:resource="http://www.hsu-ifa.de/ontologies/LVGridTopology#Component"/>
+        <rdfs:label>is component of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/LVGridTopology#isLocatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.hsu-ifa.de/ontologies/LVGridTopology#isLocatedIn">
+        <rdfs:domain rdf:resource="http://www.hsu-ifa.de/ontologies/LVGridTopology#Component"/>
+        <rdfs:range rdf:resource="http://www.hsu-ifa.de/ontologies/LVGridTopology#GridDistrict"/>
+        <rdfs:label>is located in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/LVGridTopology#isRootNode -->
+
+    <owl:DatatypeProperty rdf:about="http://www.hsu-ifa.de/ontologies/LVGridTopology#isRootNode">
+        <rdfs:domain rdf:resource="http://www.hsu-ifa.de/ontologies/LVGridTopology#Node"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label>is root node</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/LVGridTopology#Busbar -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/LVGridTopology#Busbar">
+        <rdfs:label>Busbar</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/LVGridTopology#Component -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/LVGridTopology#Component">
+        <rdfs:label>Component</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/LVGridTopology#GridDistrict -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/LVGridTopology#GridDistrict">
+        <rdfs:label>Grid District</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/LVGridTopology#LineSegment -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/LVGridTopology#LineSegment">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/LVGridTopology#Component"/>
+        <rdfs:label>Line Segment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hsu-ifa.de/ontologies/LVGridTopology#Node -->
+
+    <owl:Class rdf:about="http://www.hsu-ifa.de/ontologies/LVGridTopology#Node">
+        <rdfs:subClassOf rdf:resource="http://www.hsu-ifa.de/ontologies/LVGridTopology#Component"/>
+        <rdfs:label>Node</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
