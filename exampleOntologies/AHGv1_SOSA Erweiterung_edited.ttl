@@ -1,0 +1,22 @@
+@prefix : <https://www.hsu-ifa.de/ontologies/SOSAext#> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix unit: <http://qudt.org/vocab/unit/> .
+
+unit:A a owl:NamedIndividual .
+
+unit:V a owl:NamedIndividual .
+
+<https://www.hsu-ifa.de/ontologies/SOSAext#> a owl:Ontology ;
+    owl:imports sosa: ;
+    mod:createdWith <https://chowlk.linkeddata.es/> .
+
+:BatteryCapacity a owl:Class ;
+    rdfs:label "Battery Capacity" ;
+    rdfs:subClassOf sosa:ObservableProperty .
+
+:StateOfCharge a owl:Class ;
+    rdfs:label "State Of Charge" ;
+    rdfs:subClassOf sosa:ObservableProperty .

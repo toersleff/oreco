@@ -1,0 +1,26 @@
+@prefix : <https://www.hsu-ifa.de/ontologies/SAREF4ENERbs#> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix s4ener: <https://saref.etsi.org/saref4ener/> .
+@prefix saref: <https://saref.etsi.org/core/> .
+@prefix unit: <http://qudt.org/vocab/unit/> .
+
+unit:PERCENT a owl:NamedIndividual,
+        saref:UnitOfMeasure .
+
+<https://www.hsu-ifa.de/ontologies/SAREF4ENERbs#> a owl:Ontology ;
+    owl:imports s4ener: ;
+    mod:createdWith <https://chowlk.linkeddata.es/> .
+
+:BatteryCapacity a owl:Class ;
+    rdfs:label "Battery Capacity" ;
+    rdfs:subClassOf s4ener:Property .
+
+:BatteryStorage a owl:Class ;
+    rdfs:label "Battery Storage" ;
+    rdfs:subClassOf s4ener:Device .
+
+:StateOfCharge a owl:Class ;
+    rdfs:label "State Of Charge" ;
+    rdfs:subClassOf s4ener:Property .

@@ -1,0 +1,52 @@
+@prefix : <http://www.hsu-ifa.de/ontologies/LVGridTopology#> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.hsu-ifa.de/ontologies/LVGridTopology#> a owl:Ontology ;
+    mod:createdWith <https://chowlk.linkeddata.es/> .
+
+:hasEndNode a owl:ObjectProperty ;
+    rdfs:label "has end node" ;
+    rdfs:domain :LineSegment ;
+    rdfs:range :Node .
+
+:hasStartNode a owl:ObjectProperty ;
+    rdfs:label "has start node" ;
+    rdfs:domain :LineSegment ;
+    rdfs:range :Node .
+
+:isLocatedIn a owl:ObjectProperty ;
+    rdfs:label "is located in" ;
+    rdfs:domain :Component ;
+    rdfs:range :GridDistrict .
+
+:isRootNode a owl:DatatypeProperty ;
+    rdfs:label "is root node" ;
+    rdfs:domain :Node ;
+    rdfs:range xsd:boolean .
+
+:Busbar a owl:Class ;
+    rdfs:label "Busbar" .
+
+:GridDistrict a owl:Class ;
+    rdfs:label "Grid District" .
+
+:isComponentOf a owl:ObjectProperty ;
+    rdfs:label "is component of" ;
+    rdfs:domain :Busbar ;
+    rdfs:range :Component ;
+    owl:inverseOf :isComponentOf .
+
+:LineSegment a owl:Class ;
+    rdfs:label "Line Segment" ;
+    rdfs:subClassOf :Component .
+
+:Node a owl:Class ;
+    rdfs:label "Node" ;
+    rdfs:subClassOf :Component .
+
+:Component a owl:Class ;
+    rdfs:label "Component" .
+
