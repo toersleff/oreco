@@ -11,12 +11,12 @@
     <category citation-format="author-date"/>
     <category field="generic-base"/>
     <summary>The Harvard author-date style adapted for specific requirements at HSU-IFA</summary>
-    <updated>2024-11-12T14:29:04+00:00</updated>
+    <updated>2024-11-12T14:38:43+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <macro name="editor">
     <names variable="editor" delimiter=", ">
-      <name and="symbol" delimiter-precedes-last="never" et-al-min="4" et-al-use-first="3" initialize-with=". "/>
+      <name and="symbol" et-al-min="4" et-al-use-first="3" initialize-with=". "/>
     </names>
     <text value=" (Hrsg.)"/>
   </macro>
@@ -25,7 +25,7 @@
   </macro>
   <macro name="author">
     <names variable="author">
-      <name and="symbol" delimiter-precedes-last="never" et-al-min="6" et-al-use-first="7" initialize-with="."/>
+      <name and="symbol" delimiter-precedes-last="never" et-al-min="6" et-al-use-first="7" initialize-with="." name-as-sort-order="all"/>
       <label form="short" prefix=" " text-case="lowercase"/>
       <substitute>
         <names variable="editor"/>
@@ -107,8 +107,8 @@
   </macro>
   <macro name="pages">
     <group>
-      <text value="S. "/>
-      <text variable="page"/>
+      <label variable="page" form="short" suffix=" "/>
+      <text variable="page" prefix="S. "/>
     </group>
   </macro>
   <citation et-al-min="3" et-al-use-first="1" disambiguate-add-year-suffix="true" disambiguate-add-names="true" disambiguate-add-givenname="true">
