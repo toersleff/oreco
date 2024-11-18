@@ -8,7 +8,8 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://www.hsu-ifa.de/ontologies/OptiFlex">
-        <mod:createdWith rdf:resource="https://chowlk.linkeddata.es/"/>
+          <rdfs:comment>This ontology is based on P. Schott et al., 2019. A generic data model for describing flexibility in power markets. Energies, vol. 12(10), pp. 1–29.</rdfs:comment>
+          <mod:createdWith rdf:resource="https://chowlk.linkeddata.es/"/>
     </owl:Ontology>
     
 
